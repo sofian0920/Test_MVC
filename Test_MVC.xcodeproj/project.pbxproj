@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC235D022A4985AE00AD990A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D012A4985AE00AD990A /* AppDelegate.swift */; };
 		AC235D042A4985AE00AD990A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D032A4985AE00AD990A /* SceneDelegate.swift */; };
-		AC235D062A4985AE00AD990A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D052A4985AE00AD990A /* ViewController.swift */; };
-		AC235D092A4985AE00AD990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC235D072A4985AE00AD990A /* Main.storyboard */; };
 		AC235D0B2A4985AF00AD990A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC235D0A2A4985AF00AD990A /* Assets.xcassets */; };
 		AC235D0E2A4985AF00AD990A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC235D0C2A4985AF00AD990A /* LaunchScreen.storyboard */; };
+		AC235D1A2A49875900AD990A /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D192A49875900AD990A /* ShopModel.swift */; };
+		AC235D1C2A4987A500AD990A /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D1B2A4987A500AD990A /* ShopView.swift */; };
+		AC235D1E2A4988F600AD990A /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC235D1D2A4988F600AD990A /* ShopController.swift */; };
+		AC235D202A49891900AD990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC235D1F2A49891900AD990A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC235CFE2A4985AE00AD990A /* Test_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC235D012A4985AE00AD990A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC235D032A4985AE00AD990A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC235D052A4985AE00AD990A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC235D082A4985AE00AD990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC235D0A2A4985AF00AD990A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC235D0D2A4985AF00AD990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC235D0F2A4985AF00AD990A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC235D192A49875900AD990A /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		AC235D1B2A4987A500AD990A /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		AC235D1D2A4988F600AD990A /* ShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
+		AC235D1F2A49891900AD990A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				AC235D012A4985AE00AD990A /* AppDelegate.swift */,
 				AC235D032A4985AE00AD990A /* SceneDelegate.swift */,
-				AC235D052A4985AE00AD990A /* ViewController.swift */,
-				AC235D072A4985AE00AD990A /* Main.storyboard */,
-				AC235D0A2A4985AF00AD990A /* Assets.xcassets */,
-				AC235D0C2A4985AF00AD990A /* LaunchScreen.storyboard */,
-				AC235D0F2A4985AF00AD990A /* Info.plist */,
+				AC235D152A4986C800AD990A /* Controller */,
+				AC235D162A4986E200AD990A /* View */,
+				AC235D172A4986EF00AD990A /* Model */,
+				AC235D182A49870600AD990A /* Resources */,
 			);
 			path = Test_MVC;
+			sourceTree = "<group>";
+		};
+		AC235D152A4986C800AD990A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC235D1D2A4988F600AD990A /* ShopController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC235D162A4986E200AD990A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC235D1B2A4987A500AD990A /* ShopView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC235D172A4986EF00AD990A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC235D192A49875900AD990A /* ShopModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC235D182A49870600AD990A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC235D0F2A4985AF00AD990A /* Info.plist */,
+				AC235D0C2A4985AF00AD990A /* LaunchScreen.storyboard */,
+				AC235D1F2A49891900AD990A /* Main.storyboard */,
+				AC235D0A2A4985AF00AD990A /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC235D202A49891900AD990A /* Main.storyboard in Resources */,
 				AC235D0E2A4985AF00AD990A /* LaunchScreen.storyboard in Resources */,
 				AC235D0B2A4985AF00AD990A /* Assets.xcassets in Resources */,
-				AC235D092A4985AE00AD990A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC235D062A4985AE00AD990A /* ViewController.swift in Sources */,
+				AC235D1A2A49875900AD990A /* ShopModel.swift in Sources */,
 				AC235D022A4985AE00AD990A /* AppDelegate.swift in Sources */,
+				AC235D1C2A4987A500AD990A /* ShopView.swift in Sources */,
 				AC235D042A4985AE00AD990A /* SceneDelegate.swift in Sources */,
+				AC235D1E2A4988F600AD990A /* ShopController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC235D072A4985AE00AD990A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC235D082A4985AE00AD990A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC235D0C2A4985AF00AD990A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
