@@ -44,6 +44,7 @@
 		AC235CF52A4985AE00AD990A = {
 			isa = PBXGroup;
 			children = (
+				AC235D0F2A4985AF00AD990A /* Info.plist */,
 				AC235D002A4985AE00AD990A /* Test_MVC */,
 				AC235CFF2A4985AE00AD990A /* Products */,
 			);
@@ -97,7 +98,6 @@
 		AC235D182A49870600AD990A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AC235D0F2A4985AF00AD990A /* Info.plist */,
 				AC235D0C2A4985AF00AD990A /* LaunchScreen.storyboard */,
 				AC235D1F2A49891900AD990A /* Main.storyboard */,
 				AC235D0A2A4985AF00AD990A /* Assets.xcassets */,
@@ -334,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "norina-sofia.Test-MVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "norina-sofia.Test-MVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

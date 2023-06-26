@@ -9,20 +9,34 @@ import UIKit
 
 class ShopController: UIViewController {
     
+    private var shopModel = ProductGroup.vegetables()
+    private var shopView: ShopView!{
+        guard isViewLoaded else { return nil }
+        return ( view as! ShopView )
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        configure()
     }
-//    func hideBorder(view: UIView) {
-//        UIView.animate(withDuration: 0.3,
-//                       delay: 0,
-//                       options: .curveEaseInOut,
-//                       animations: {
-//            self.createViewHeighConstraint.constraint = view.bounds.height * 0.6
-//
-//
-//        })
-//    }
+
+}
+
+private extension ShopController {
+    func configure() {
+        shopView.tableView.delegate = self
+        shopView.tableView.dataSource = self
+    }
+}
+
+extension ShopController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell")
+        cell?.textLabel?.text = shopModel.product[indexPath.row].name
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shopModel.product.count
+    }
 }
